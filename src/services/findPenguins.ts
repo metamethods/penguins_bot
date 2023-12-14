@@ -71,7 +71,7 @@ export default new Service({
 
     // repeat searching for images until we have until the &start parameter is 100 or greater 
     for (let i = 1; i < 200; i += 10) {
-      const request = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.GOOGLE_API_KEY}&cx=${process.env.GOOGLE_CX}&q=penguin_images&searchType=image&start=${i}`);
+      const request = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.GOOGLE_API_KEY}&cx=${process.env.GOOGLE_CX}&q=penguin nature&searchType=image&start=${i}`);
       const response = await request.json() as GoogleResult;
 
       for (const item in response.items) 
