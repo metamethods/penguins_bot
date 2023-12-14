@@ -56,6 +56,7 @@ export default new Service({
     });
   },
   options: {
-    interval: 60_000,
+    interval: 60_000 * 60 * 24,
+    startImmediately: true
   }
 })
